@@ -1,4 +1,7 @@
-body {
-  background: purple; }
+html, body {
+  overflow-x: none; }
+
+ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=index.css.map */

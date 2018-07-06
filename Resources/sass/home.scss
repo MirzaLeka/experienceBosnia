@@ -1,0 +1,30 @@
+body{
+    background: #FFF;
+}
+
+#header{
+    background: url("../img/Cover/01.jpg") no-repeat center center;
+    width: 100%;
+    padding: 20px 10px 60px 10px;
+    background-attachment: fixed;
+    height: 70vh; 
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  line-height: 90vh;
+   text-align: center;
+}
+
+
+.contactIcons{
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .listIcon{
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid #000;
+  }
