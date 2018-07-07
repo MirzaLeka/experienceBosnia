@@ -1,3 +1,12 @@
+/* Mixins */
+  
+  @mixin shadowAround($top, $down, $left, $right, $color){
+   -webkit-box-shadow: $top $down $left $right $color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow:    $top $down $left $right $color;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
+  }
+  
+
 body{
     background: #FFF;
 }
@@ -7,7 +16,7 @@ body{
     width: 100%;
     padding: 20px 10px 60px 10px;
     background-attachment: fixed;
-    height: 50vh; 
+    height: 75vh; 
     overflow: hidden;
     background-size: cover;
     -webkit-background-size: cover;
@@ -27,4 +36,29 @@ body{
     display: inline-block;
     margin-right: 20px;
     border: 1px solid #000;
+  }
+
+  #excursionsDiv{
+    background: #e6e7e8;
+  }
+
+  #excursionsTitle{
+    color: #f48634;
+  }
+
+  .excursionsCard{
+    height: 340px;
+    cursor: pointer;
+    &:hover{
+      @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+    }
+  }
+
+.excursionsCardImage{
+  width: 100%;
+  height: 200px;
+}
+
+  .excursionsDescription{
+    color: #4044ab;
   }
