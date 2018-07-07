@@ -1,3 +1,10 @@
+
+/* Variables */
+
+$orange: #f48634;
+$purple: #4044ab;
+$grey: #e6e7e8;
+
 /* Mixins */
   
   @mixin shadowAround($top, $down, $left, $right, $color){
@@ -11,6 +18,8 @@ body{
     background: #FFF;
 }
 
+/* Header */
+
 #header{
     background: url("../img/Cover/01.jpg") no-repeat center center;
     width: 100%;
@@ -22,18 +31,44 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-  line-height: 90vh;
-   text-align: center;
+}
+
+#headerTitle{
+color: #FFF;
+text-align: center;
+line-height: 105vh;
+font-size: 95px;
+}
+
+.languageBtn{
+  width: 55px;
+  border: 1px solid $orange;
+  border-radius: 5px;
+  color: $purple;
+  background: transparent;
+  padding-right: 10px;
+}
+
+#languageBtn1{
+  top: 3%;
+  right: 10%;
+  position: absolute;
+}
+
+#languageBtn2{
+  top: 3%;
+  right: 5%;
+  position: absolute;
 }
 
 /* Excursions cards */
 
   #excursionsDiv{
-    background: #e6e7e8;
+    background: $grey;
   }
 
   #excursionsTitle{
-    color: #f48634;
+    color: $orange;
   }
 
   .excursionsCard{
@@ -50,8 +85,33 @@ body{
 }
 
   .excursionsDescription{
-    color: #4044ab;
+    color: $purple;
   }
+
+
+  /* Transport */
+
+  .transportCard{
+    cursor: pointer;
+    height: 100px;
+    &:hover{
+      @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+    }
+  }
+
+  .transportCard:nth-child(n+4) {
+    margin-top: 30px;
+  }
+
+  .transportCardImage{
+    width: 100%;
+    height: 100px;
+  }
+
+  .transportCardDescription{
+    color: #000;
+  }
+  
 
   /* Footer */
 

@@ -1,7 +1,9 @@
+/* Variables */
 /* Mixins */
 body {
   background: #FFF; }
 
+/* Header */
 #header {
   background: url("../img/Cover/01.jpg") no-repeat center center;
   width: 100%;
@@ -12,9 +14,31 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  line-height: 90vh;
-  text-align: center; }
+  -o-background-size: cover; }
+
+#headerTitle {
+  color: #FFF;
+  text-align: center;
+  line-height: 105vh;
+  font-size: 95px; }
+
+.languageBtn {
+  width: 55px;
+  border: 1px solid #f48634;
+  border-radius: 5px;
+  color: #4044ab;
+  background: transparent;
+  padding-right: 10px; }
+
+#languageBtn1 {
+  top: 3%;
+  right: 10%;
+  position: absolute; }
+
+#languageBtn2 {
+  top: 3%;
+  right: 5%;
+  position: absolute; }
 
 /* Excursions cards */
 #excursionsDiv {
@@ -40,6 +64,28 @@ body {
 
 .excursionsDescription {
   color: #4044ab; }
+
+/* Transport */
+.transportCard {
+  cursor: pointer;
+  height: 100px; }
+  .transportCard:hover {
+    -webkit-box-shadow: 1px 1px 1px 1px #aaa;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 1px 1px 1px 1px #aaa;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 1px 1px 1px 1px #aaa;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+.transportCard:nth-child(n+4) {
+  margin-top: 30px; }
+
+.transportCardImage {
+  width: 100%;
+  height: 100px; }
+
+.transportCardDescription {
+  color: #000; }
 
 /* Footer */
 .footer {

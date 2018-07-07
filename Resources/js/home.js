@@ -1,7 +1,7 @@
 const excursionsCardImages = [
     '../Resources/img/M 2.jpg',
-    '../Resources/img/B 2.jpg',
-    '../Resources/img/T 3.jpg'
+    '../Resources/img/T 3.jpg',
+    '../Resources/img/B 2.jpg'
 ];
 
 const excursionsDescription = [
@@ -17,13 +17,50 @@ const excursionsPaths = [
 ];
 
 
-let cards = '';
+let excursionsCards = '';
 for(let i = 0; i < excursionsCardImages.length; i++) {
-cards+= `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 excursionsCard" onclick="window.location.href='${excursionsPaths[i]}'"> <br>
+excursionsCards+= `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 excursionsCard" onclick="window.location.href='${excursionsPaths[i]}'"> <br>
 <img src="${excursionsCardImages[i]}" class="img-responsive excursionsCardImage" alt="Image"> <br>
 <p class="excursionsDescription" style="font-size: 16px">${excursionsDescription[i]}</p>
 </div>`;
 
 }
 
-$("#excursionsList").append(cards);
+$("#excursionsList").append(excursionsCards);
+
+
+/* Transportation Cards */
+
+const transportCardImages = [
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
+    'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png'
+]; 
+
+const transportCardDescription = [
+    'Vozila u ponudi',
+    'Prevoz na more',
+    'Iznajmljivanje vozila',
+    'Prevoz na festivale u regionu',
+    'Gastoenološki događaji u regionu',
+    'Prevoz grupa do 28 u BiH i šire'
+];
+
+let transportCards = '';
+
+for (let i = 0; i < transportCardImages.length; i++) {
+    transportCards += `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 transportCard">
+    <div class="col-lg-5">
+     <img src="${transportCardImages[i]}" class="img-responsive transportCardImage" alt="Image">
+    </div>
+    <div class="col-lg-7">
+      <p style="font-size: 16px" class='transportCardDescription'>${transportCardDescription[i]}</p>
+    </div>
+     </div>`;
+
+}
+
+$("#transportList").append(transportCards);
