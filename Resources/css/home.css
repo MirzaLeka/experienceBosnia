@@ -1,7 +1,21 @@
 /* Variables */
 /* Mixins */
-body {
+html, body {
+  overflow-x: none;
   background: #FFF; }
+
+.jumbotron {
+  background: transparent; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  text-emphasis: none; }
+  a:hover {
+    text-decoration: none;
+    text-emphasis: none; }
 
 /* Header */
 #header {
@@ -39,6 +53,28 @@ body {
   top: 3%;
   right: 5%;
   position: absolute; }
+
+/* Footer */
+.footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: #4b4b4d; }
+
+.contactIcons {
+  margin: 0 auto;
+  text-align: center; }
+
+.listIcon {
+  cursor: pointer;
+  display: inline-block;
+  color: #FFF;
+  margin-right: 20px;
+  border: 1px solid #FFF;
+  padding: 5px;
+  margin-top: 2%;
+  width: 40px;
+  height: 40px; }
 
 /* Excursions cards */
 #excursionsDiv {
@@ -100,27 +136,5 @@ body {
   color: #42b364; }
   .sidebarAnchor:hover {
     color: #348e4f !important; }
-
-/* Footer */
-.footer {
-  height: 100px;
-  width: 100%;
-  text-align: center;
-  background: #4b4b4d; }
-
-.contactIcons {
-  margin: 0 auto;
-  text-align: center; }
-
-.listIcon {
-  cursor: pointer;
-  display: inline-block;
-  color: #FFF;
-  margin-right: 20px;
-  border: 1px solid #FFF;
-  padding: 5px;
-  margin-top: 2%;
-  width: 40px;
-  height: 40px; }
 
 /*# sourceMappingURL=home.css.map */

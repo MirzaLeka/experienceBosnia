@@ -1,67 +1,5 @@
+@import "index.scss";
 
-/* Variables */
-
-$orange: #f48634;
-$purple: #4044ab;
-$grey: #e6e7e8;
-$greyBorder: #373435;
-$green: #42b364;
-
-/* Mixins */
-  
-  @mixin shadowAround($top, $down, $left, $right, $color){
-   -webkit-box-shadow: $top $down $left $right $color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-   -moz-box-shadow:    $top $down $left $right $color;  /* Firefox 3.5 - 3.6 */
-   box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
-  }
-  
-
-body{
-    background: #FFF;
-}
-
-/* Header */
-
-#header{
-    background: url("../img/Cover/01.jpg") no-repeat center center;
-    width: 100%;
-    padding: 20px 10px 60px 10px;
-    background-attachment: fixed;
-    height: 75vh; 
-    overflow: hidden;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#headerTitle{
-color: #FFF;
-text-align: center;
-line-height: 105vh;
-font-size: 95px;
-}
-
-.languageBtn{
-  width: 55px;
-  border: 1px solid $orange;
-  border-radius: 5px;
-  color: $purple;
-  background: transparent;
-  padding-right: 10px;
-}
-
-#languageBtn1{
-  top: 3%;
-  right: 10%;
-  position: absolute;
-}
-
-#languageBtn2{
-  top: 3%;
-  right: 5%;
-  position: absolute;
-}
 
 /* Excursions cards */
 
@@ -132,32 +70,5 @@ font-size: 95px;
     }
   }
   
-
-  /* Footer */
-
-  .footer{
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    background: #4b4b4d;
-  }
-
-  
-.contactIcons{
-  margin: 0 auto;
-  text-align: center;
-}
-
-.listIcon{
-  cursor: pointer;
-  display: inline-block;
-  color: #FFF;
-  margin-right: 20px;
-  border: 1px solid #FFF;
-  padding: 5px;
-  margin-top: 2%;
-  width: 40px;
-  height: 40px;
-}
 
   
