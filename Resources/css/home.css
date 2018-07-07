@@ -16,15 +16,7 @@ body {
   line-height: 90vh;
   text-align: center; }
 
-.contactIcons {
-  margin: 0 auto;
-  text-align: center; }
-
-.listIcon {
-  display: inline-block;
-  margin-right: 20px;
-  border: 1px solid #000; }
-
+/* Excursions cards */
 #excursionsDiv {
   background: #e6e7e8; }
 
@@ -48,5 +40,27 @@ body {
 
 .excursionsDescription {
   color: #4044ab; }
+
+/* Footer */
+.footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: #4b4b4d; }
+
+.contactIcons {
+  margin: 0 auto;
+  text-align: center; }
+
+.listIcon {
+  cursor: pointer;
+  display: inline-block;
+  color: #FFF;
+  margin-right: 20px;
+  border: 1px solid #FFF;
+  padding: 5px;
+  margin-top: 2%;
+  width: 40px;
+  height: 40px; }
 
 /*# sourceMappingURL=home.css.map */

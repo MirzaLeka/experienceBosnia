@@ -10,10 +10,16 @@ const excursionsDescription = [
     'Jednodnevni aranžmanski izleti u BiH sa aktivnim sadržajima, rafting, splavarenje, biciklizam, adrenalinski sportovi'
 ]
 
+const excursionsPaths = [
+    '/arrangements',
+    '/trips',
+    '/sports'
+];
+
 
 let cards = '';
 for(let i = 0; i < excursionsCardImages.length; i++) {
-cards+= `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 excursionsCard"> <br>
+cards+= `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 excursionsCard" onclick="window.location.href='${excursionsPaths[i]}'"> <br>
 <img src="${excursionsCardImages[i]}" class="img-responsive excursionsCardImage" alt="Image"> <br>
 <p class="excursionsDescription" style="font-size: 16px">${excursionsDescription[i]}</p>
 </div>`;
