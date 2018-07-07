@@ -1,6 +1,9 @@
 html, body {
   overflow-x: none; }
 
+.jumbotron {
+  background: #FFF; }
+
 ul {
   list-style-type: none; }
 
