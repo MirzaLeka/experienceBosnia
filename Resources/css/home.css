@@ -87,6 +87,20 @@ body {
 .transportCardDescription {
   color: #000; }
 
+.sidebarUl {
+  border-left: 2px solid #373435;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+.sidebarLi {
+  margin-top: 10px; }
+
+.sidebarAnchor {
+  font-size: 18px;
+  color: #42b364; }
+  .sidebarAnchor:hover {
+    color: #348e4f !important; }
+
 /* Footer */
 .footer {
   height: 100px;

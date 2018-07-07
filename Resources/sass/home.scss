@@ -4,6 +4,8 @@
 $orange: #f48634;
 $purple: #4044ab;
 $grey: #e6e7e8;
+$greyBorder: #373435;
+$green: #42b364;
 
 /* Mixins */
   
@@ -110,6 +112,24 @@ font-size: 95px;
 
   .transportCardDescription{
     color: #000;
+  }
+
+  .sidebarUl{
+    border-left: 2px solid $greyBorder;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .sidebarLi{
+    margin-top: 10px;
+  }
+
+  .sidebarAnchor{
+    font-size: 18px;
+    color: $green;
+    &:hover{
+      color: darken($green, 10%) !important;
+    }
   }
   
 

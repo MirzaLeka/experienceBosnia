@@ -7,4 +7,11 @@ html, body {
 ul {
   list-style-type: none; }
 
+a {
+  text-decoration: none;
+  text-emphasis: none; }
+  a:hover {
+    text-decoration: none;
+    text-emphasis: none; }
+
 /*# sourceMappingURL=index.css.map */
