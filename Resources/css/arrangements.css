@@ -76,4 +76,13 @@ a {
   width: 40px;
   height: 40px; }
 
+.arrangementsImg {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.arrangementsBtn {
+  width: 97% !important;
+  margin-bottom: 50px; }
+
 /*# sourceMappingURL=arrangements.css.map */
