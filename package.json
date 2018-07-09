@@ -1,16 +1,21 @@
 {
   "name": "experiencebosnia",
   "version": "1.0.0",
-  "description": "",
+  "description": "experience bosnia website",
   "main": "index.js",
   "scripts": {
-    "start" : "node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirzaLeka/experienceBosnia"
+  },
+  "author": "Mirza Leka",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "npm": "^6.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
