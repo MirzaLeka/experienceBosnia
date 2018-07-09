@@ -16,7 +16,7 @@ $(document).ready(() => {
     setInterval(() => {
         var rand = headerCover[Math.floor(Math.random() * headerCover.length)];
 
-        $("#header").css({
+        $("#header").fadeIn(1000).css({
             "background": `url(${rand}) no-repeat center center`,
             "backgroundSize" : "cover"
         });

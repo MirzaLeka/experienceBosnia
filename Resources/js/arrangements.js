@@ -36,7 +36,7 @@ const pageImages = [
 
 // Arrangements routes
 
-const arrangementsRoutes = [
+const arrangementsTitles = [
     'Mostar-Počitelj-Konjic',
     'Jajce-Travnik',
     'Bihać-Ostrožac-Una',
@@ -52,8 +52,8 @@ const arrangementsRoutes = [
 let arrangements = '';
 j = 0;
 
-for (let i = 0; i < arrangementsRoutes.length; i++) {
-    arrangements += `<h2 class="routeTitle">${arrangementsRoutes[i]}</h2> <br> `
+for (let i = 0; i < arrangementsTitles.length; i++) {
+    arrangements += `<h2 class="arrangementsTitle">${arrangementsTitles[i]}</h2> <br> `
 
 for (; j < pageImages.length; j++) {
 

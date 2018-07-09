@@ -1,5 +1,12 @@
 /* Variables */
 /* Mixins */
+/* Fonts */
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/HTOWERT.TTF); }
+@font-face {
+  font-family: arrangementsTitle;
+  src: url(../fonts/FuturaBookBT.ttf); }
 html, body {
   overflow-x: none;
   background: #FFF; }
@@ -34,7 +41,8 @@ a {
   color: #FFF;
   text-align: center;
   line-height: 105vh;
-  font-size: 95px; }
+  font-size: 95px;
+  font-family: titleFont; }
 
 .languageBtn {
   width: 55px;

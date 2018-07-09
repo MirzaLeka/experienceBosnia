@@ -14,6 +14,18 @@ $green: #42b364;
    box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
   }
 
+  /* Fonts */
+
+  @font-face {
+    font-family: titleFont;
+    src: url(../fonts/HTOWERT.TTF);
+}
+
+@font-face {
+  font-family: arrangementsTitle;
+  src: url(../fonts/FuturaBookBT.ttf);
+}
+
 html, body{
     overflow-x: none;
     background: #FFF;
@@ -56,6 +68,7 @@ color: #FFF;
 text-align: center;
 line-height: 105vh;
 font-size: 95px;
+font-family: titleFont;
 }
 
 .languageBtn{
