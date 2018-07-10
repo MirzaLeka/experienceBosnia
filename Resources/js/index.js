@@ -13,33 +13,23 @@ $(document).ready(() => {
         '../Resources/img/Cover/10.jpg'
     ];
 
+var counter = 0;
+
     setInterval(() => {
-        var rand = headerCover[Math.floor(Math.random() * headerCover.length)];
+
+counter++;
+
+if (counter == headerCover.length) {
+    counter = 0;
+}
 
         $('#header').fadeTo('slow', 0.3, function()
         {
             $(this).css({
-                'background-image': 'url(' + rand + ')'
-                //'transition': 'background 0.5s linear'
+                'background-image': 'url(' + headerCover[counter] + ')'
             });
         }).fadeTo('slow', 1);
 
-        /*
-        $("#header").stop().animate({opacity: 0},1000,function(){
-            $(this).css({'background-image': `url(${rand})`})
-                       .animate({opacity: 1},{duration:500});
-         }); */
-        
-         /*   $("#header" ).animate({
-                "background": `url(${rand}) no-repeat center center`,
-                "backgroundSize" : "cover"
-            }, 1000); */
-
-     /*   $("#header").fadeIn(1000).css({
-            "background": `url(${rand}) no-repeat center center`,
-            "backgroundSize" : "cover"
-        }); */
-    
         }, 4000);
 
     });
