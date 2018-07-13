@@ -1,0 +1,99 @@
+/* Variables */
+/* Mixins */
+/* Fonts */
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/HTOWERT.TTF); }
+@font-face {
+  font-family: arrangementsTitle;
+  src: url(../fonts/FuturaBookBT.ttf); }
+html, body {
+  overflow-x: none;
+  background: #FFF; }
+
+.jumbotron {
+  background: transparent; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  text-emphasis: none; }
+  a:hover {
+    text-decoration: none;
+    text-emphasis: none; }
+
+/* Header */
+#header {
+  background: url("../img/Cover/01.jpg") no-repeat center center;
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+  background-attachment: fixed;
+  height: 75vh;
+  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+#headerTitle {
+  color: #FFF;
+  text-align: center;
+  line-height: 105vh;
+  font-size: 95px;
+  font-family: titleFont; }
+
+.languageBtn {
+  width: 55px;
+  border: 1px solid #f48634;
+  border-radius: 5px;
+  color: #4044ab;
+  background: transparent;
+  padding-right: 10px; }
+
+#languageBtn1 {
+  top: 3%;
+  right: 10%;
+  position: absolute; }
+
+#languageBtn2 {
+  top: 3%;
+  right: 5%;
+  position: absolute; }
+
+/* Footer */
+.footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: #4b4b4d; }
+
+.contactIcons {
+  margin: 0 auto;
+  text-align: center; }
+
+.listIcon {
+  cursor: pointer;
+  display: inline-block;
+  color: #FFF;
+  margin-right: 20px;
+  border: 1px solid #FFF;
+  padding: 5px;
+  margin-top: 2%;
+  width: 40px;
+  height: 40px; }
+
+.arrangementsImg {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.arrangementsBtn {
+  width: 97% !important;
+  margin-bottom: 50px; }
+
+.arrangementsTitle {
+  font-family: arrangementsTitle; }
+
+/*# sourceMappingURL=sports.css.map */
