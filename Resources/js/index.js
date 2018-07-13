@@ -1,5 +1,31 @@
 $(document).ready(() => {
 
+     // Footer
+
+     const footerIconClasses = [
+        'fa fa-envelope fa-2x',
+        'fa fa-facebook fa-2x',
+        'fa fa-twitter fa-2x',
+        'fa fa-instagram fa-2x'
+    ];
+
+    const footerHrefs = [
+        'https://www.gmail.com',
+        'https://www.facebook.com',
+        'https://www.twitter.com',
+        'https://www.instagram.com'
+    ];
+
+    let listOfIcons = '';
+
+    for (let i = 0; i < footerIconClasses.length; i++) {
+        listOfIcons += `<a href=${footerHrefs[i]} target="_blank"><li class="listIcon"><i class="${footerIconClasses[i]}" aria-hidden="true"></i></li></a>`;
+    }
+
+    $(".contactIcons").append(listOfIcons);
+
+    // Changing cover
+
     const headerCover = [
         '../Resources/img/Cover/01.jpg',
         '../Resources/img/Cover/02.jpg',
@@ -32,29 +58,6 @@ if (counter == headerCover.length) {
 
         }, 4000);
 
-        // Footer
-
-        const footerIconClasses = [
-            'fa fa-envelope fa-2x',
-            'fa fa-facebook fa-2x',
-            'fa fa-twitter fa-2x',
-            'fa fa-instagram fa-2x'
-        ];
-
-        const footerHrefs = [
-            'https://www.gmail.com',
-            'https://www.facebook.com',
-            'https://www.twitter.com',
-            'https://www.instagram.com'
-        ];
-
-        let listOfIcons = '';
-
-        for (let i = 0; i < footerIconClasses.length; i++) {
-            listOfIcons += `<a href=${footerHrefs[i]} target="_blank"><li class="listIcon"><i class="${footerIconClasses[i]}" aria-hidden="true"></i></li></a>`;
-        }
-
-        $(".contactIcons").append(listOfIcons);
 
     });
     

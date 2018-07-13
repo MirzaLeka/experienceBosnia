@@ -29,7 +29,7 @@ const pageImages = [
     '../Resources/img/trips/jahorina 2.jpg',
 ];
 
-// Arrangements routes
+// Trips routes
 
 const tripsTitles = [
     'Sarajevo Sightseeng',
