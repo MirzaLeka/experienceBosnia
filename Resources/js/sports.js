@@ -1,17 +1,17 @@
 const pageImages = [
     '',
-    '../Resources/img/sports/raft 1.jpg',
-    '../Resources/img/sports/raft 2.jpg',
-    '../Resources/img/sports/boracko 1.jpg',
-    '../Resources/img/sports/boracko 2.jpg',
-    '../Resources/img/sports/splav 1.jpg',
-    '../Resources/img/sports/splav 2.jpg',
-    '../Resources/img/sports/bjelasnica 1.jpg',
-    '../Resources/img/sports/bjelasnica 2.jpg',
-    '../Resources/img/sports/ES ajdinovici.jpg',
-    '../Resources/img/sports/ES begovo.jpg',
-    '../Resources/img/sports/ES cardaci.jpg',
-    '../Resources/img/sports/ES konjic.jpg'
+    '../Resources/img/sports/Raft1.jpg',
+    '../Resources/img/sports/Raft2.jpg',
+    '../Resources/img/sports/Boracko1.jpg',
+    '../Resources/img/sports/Boracko2.jpg',
+    '../Resources/img/sports/Splav1.jpg',
+    '../Resources/img/sports/Splav2.jpg',
+    '../Resources/img/sports/Bjelasnica1.jpg',
+    '../Resources/img/sports/Bjelasnica2.jpg',
+    '../Resources/img/sports/ESAjdinovici.jpg',
+    '../Resources/img/sports/ESBegovo.jpg',
+    '../Resources/img/sports/ESCardaci.jpg',
+    '../Resources/img/sports/ESKonjic.jpg'
 ];
 
 // Sports routes

@@ -1,7 +1,7 @@
 const excursionsCardImages = [
-    '../Resources/img/arrangements/M 2.jpg',
-    '../Resources/img/arrangements/T 3.jpg',
-    '../Resources/img/arrangements/B 2.jpg'
+    '../Resources/img/arrangements/M2.jpg',
+    '../Resources/img/arrangements/T3.jpg',
+    '../Resources/img/arrangements/B2.jpg'
 ];
 
 const excursionsDescription = [
