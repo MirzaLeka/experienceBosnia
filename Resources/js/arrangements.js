@@ -46,7 +46,7 @@ const arrangementsTitles = [
     'Višegrad-Srebrenica',
     'Tuzla-Srebrenik-Bijambare',
     'Neum-Stolac-Kravice',
-    'Goražde-foča-Tjentište',
+    'Goražde-Foča-Tjentište',
     'Banja Luka-Doboj-Tešanj'
 ];
 
