@@ -50,13 +50,13 @@ let trips = '';
 let k = 9;
 
 for (let i = 0; i < tripsTitles.length; i++) {
-    trips += `<h2 class="arrangementsTitle">${tripsTitles[i]}</h2> <br> `;
+    trips += ` <div class="extendDiv">  <h2 class="excursionTitle">${tripsTitles[i]}</h2> <br> `;
 
 if (i == 0) {
 
     for (let j = 1; j < 10; j++) {
 
-        trips+=`
+        trips+=` 
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
                     </div> `;
@@ -69,7 +69,7 @@ else {
 
     for (; k < pageImages.length; k++) {
 
-        trips+=`
+        trips+=` 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <img src="${pageImages[k]}" class="img-responsive arrangementsImg" alt="Image"/>
                     </div> `;
@@ -85,7 +85,7 @@ else {
 }
 k++;
 
-trips+= `<button style="width: 100%;" class="btn btn-success arrangementsBtn">SHOW MORE</button> `;
+trips+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MORE</button> </div> `;
 }
 
 $("#tripsList").append(trips);

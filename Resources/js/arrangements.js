@@ -53,7 +53,7 @@ let arrangements = '';
 j = 0;
 
 for (let i = 0; i < arrangementsTitles.length; i++) {
-    arrangements += `<h2 class="arrangementsTitle">${arrangementsTitles[i]}</h2> <br> `
+    arrangements += `<div class="extendDiv">  <h2 class="excursionTitle">${arrangementsTitles[i]}</h2> <br> `
 
 for (; j < pageImages.length; j++) {
 
@@ -64,7 +64,7 @@ if (j == 0) {
 arrangements+=`
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
-            </div> `;
+            </div>  `;
 
 if (j %4 == 0) {
     break;
@@ -73,8 +73,14 @@ if (j %4 == 0) {
 }
 ++j;
 
-arrangements+= `<button style="width: 100%;" class="btn btn-success arrangementsBtn">SHOW MORE</button> `;
+arrangements+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MORE</button>  </div>`;
 }
 
 $("#arrangementsList").append(arrangements);
 
+
+// $(".extendBtn").click(() => {
+//     $(this).(".extendDiv").css({
+//         background: "green"
+//     });
+// });

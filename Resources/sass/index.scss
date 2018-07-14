@@ -22,7 +22,7 @@ $green: #42b364;
 }
 
 @font-face {
-  font-family: arrangementsTitle;
+  font-family: excursionTitle;
   src: url(../fonts/FuturaBookBT.ttf);
 }
 
@@ -92,8 +92,6 @@ font-family: titleFont;
   position: absolute;
 }
 
-
-
   /* Footer */
 
   .footer{
@@ -113,9 +111,9 @@ font-family: titleFont;
   cursor: pointer;
   display: inline-block;
   color: #FFF;
-  margin-right: 20px;
+  margin-right: 30px;
+  padding-top: 5px;
   border: 1px solid #FFF;
-  padding: 5px;
   margin-top: 2%;
   width: 40px;
   height: 40px;

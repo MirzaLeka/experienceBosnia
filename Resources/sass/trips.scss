@@ -6,11 +6,18 @@
     margin-bottom: 20px;
 }
 
-.arrangementsBtn{
-    width: 97% !important;
-    margin-bottom: 50px;
+
+/* Excursions */
+
+.extendBtn{
+    width: 150px !important;
 }
 
-.arrangementsTitle{
-    font-family: arrangementsTitle;
+.extendDiv{
+   margin-bottom: 50px;
+}
+
+.excursionTitle{
+    font-family: excursionTitle;
+    color: $orange;
 }

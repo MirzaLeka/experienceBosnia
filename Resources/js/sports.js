@@ -29,7 +29,7 @@ let sports = '';
 let k = 6;
 let j = 1;
 for (let i = 0; i < sportsTitles.length; i++) {
-    sports += `<h2 class="arrangementsTitle">${sportsTitles[i]}</h2> <br> `;
+    sports += `<div class="extendDiv">  <h2 class="excursionTitle">${sportsTitles[i]}</h2> <br> `;
 
 if (i < 3) {
 
@@ -61,7 +61,7 @@ else {
 }
 k++;
 
-sports+= `<button style="width: 100%;" class="btn btn-success arrangementsBtn">SHOW MORE</button> `;
+sports+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MORE</button> </div> `;
 }
 
 $("#sportsList").append(sports);
