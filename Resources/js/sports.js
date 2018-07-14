@@ -1,3 +1,5 @@
+$(document).ready(() => {
+
 const pageImages = [
     '',
     '../Resources/img/sports/Raft1.jpg',
@@ -66,3 +68,4 @@ sports+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MO
 
 $("#sportsList").append(sports);
 
+});

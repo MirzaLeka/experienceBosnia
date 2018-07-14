@@ -1,3 +1,6 @@
+$(document).ready(() => {
+
+
 const pageImages = [
     '',
     '../Resources/img/trips/SS1.jpg',
@@ -90,3 +93,4 @@ trips+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MOR
 
 $("#tripsList").append(trips);
 
+});

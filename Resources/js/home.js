@@ -1,3 +1,5 @@
+$(document).ready(() => {
+
 const excursionsCardImages = [
     '../Resources/img/arrangements/M2.jpg',
     '../Resources/img/arrangements/T3.jpg',
@@ -64,3 +66,5 @@ for (let i = 0; i < transportCardImages.length; i++) {
 }
 
 $("#transportList").append(transportCards);
+
+});

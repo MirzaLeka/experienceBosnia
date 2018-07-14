@@ -1,3 +1,6 @@
+$(document).ready(() => {
+
+
 const pageImages = [
     '',
     '../Resources/img/arrangements/M1.jpg',
@@ -84,3 +87,6 @@ $("#arrangementsList").append(arrangements);
 //         background: "green"
 //     });
 // });
+
+
+});
