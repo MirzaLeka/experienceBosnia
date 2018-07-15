@@ -1,4 +1,37 @@
 
+var globalSrc = 0;
+
+// open modal
+
+function openModal(src) {
+    modal.style.display = "block";
+
+   $(".modalImg").attr("src", pageImages[src]);
+
+   globalSrc = src;
+}
+
+function nextImg() {
+    globalSrc++;
+
+    if (globalSrc == pageImages.length) {
+        globalSrc = 1;
+    }
+    
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+}
+
+function prevImg() {
+    globalSrc--;
+
+    if (globalSrc < 1) {
+        globalSrc = pageImages.length-1;
+    }
+
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+}
 
 const pageImages = [
     '',
@@ -65,7 +98,7 @@ if (j == 0) {
 
 arrangements+=`
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
+                <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
             </div>  `;
 
 if (j %4 == 0) {

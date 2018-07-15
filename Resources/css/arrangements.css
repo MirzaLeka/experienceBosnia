@@ -87,10 +87,75 @@ a {
   .listIcon:hover {
     opacity: 1; }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: transparent;
+  /* Fallback color */ }
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #888;
+  width: 50%; }
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    padding-top: 0px; }
+
+  .modal-content {
+    width: 100%;
+    border: none; } }
+.modal-body {
+  padding: 5%; }
+
+.form-group {
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: block !important;
+  width: 100%;
+  padding-bottom: 10px; }
+
+.input-group-modal {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%; }
+
+.modal-btn {
+  width: 100%;
+  background: #111;
+  color: #FFF; }
+
+.modal-btn:hover {
+  color: #FFF; }
+
+.modalImg {
+  height: 100%;
+  width: 100%; }
+
 .arrangementsImg {
   height: 150px;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  cursor: pointer; }
 
 /* Excursions */
 .extendBtn {
@@ -102,5 +167,16 @@ a {
 .excursionTitle {
   font-family: excursionTitle;
   color: #f48634; }
+
+.arrowBtn {
+  position: absolute; }
+
+#leftArrowBtn {
+  top: 50%;
+  left: 10%; }
+
+#rightArrowBtn {
+  top: 50%;
+  right: 10%; }
 
 /*# sourceMappingURL=arrangements.css.map */

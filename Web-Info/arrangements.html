@@ -52,6 +52,8 @@
   </div>
 </div>
 
+<button id="openModalBtn">OPEN MODAL</button>
+
 <div class="footer">
 
   <ul class="contactIcons">
@@ -63,7 +65,41 @@
 
 </div>
 
+
+<!-- MODAL -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+
+        <div class="modal-body">
+
+            <button class="btn arrowBtn" id="leftArrowBtn" onclick="prevImg()">
+                <i class="fa fa-angle-left fa-4x"></i>
+              </button>        
+
+          <img src='' class="modalImg" />
+
+          <button class="btn arrowBtn" id="rightArrowBtn" onclick="nextImg()">
+              <i class="fa fa-angle-right fa-4x"></i>
+            </button>
+
+
+               
+           </div>
+                  </div>
+
+              </div>
+           
+        <!-- / modal -->
+
 </body>
+
+
 <script src="../Resources/js/index.js"></script>
 <script src="../Resources/js/arrangements.js"></script>
 <script src="http://localhost:35729/livereload.js"></script>

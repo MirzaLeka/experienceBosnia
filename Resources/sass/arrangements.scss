@@ -4,6 +4,7 @@
     height: 150px;
     width: 100%;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /* Excursions */
@@ -19,4 +20,18 @@
 .excursionTitle{
     font-family: excursionTitle;
     color: $orange;
+}
+
+.arrowBtn{
+    position: absolute;
+}
+
+#leftArrowBtn{
+    top: 50%;
+    left: 10%;
+}
+
+#rightArrowBtn{
+    top: 50%;
+    right: 10%;
 }
