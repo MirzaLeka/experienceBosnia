@@ -1,4 +1,3 @@
-$(document).ready(() => {
 
 
 const pageImages = [
@@ -88,5 +87,3 @@ $("#arrangementsList").append(arrangements);
 //     });
 // });
 
-
-});

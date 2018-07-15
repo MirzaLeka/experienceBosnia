@@ -1,4 +1,3 @@
-$(document).ready(() => {
 
 const pageImages = [
     '',
@@ -68,4 +67,3 @@ sports+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MO
 
 $("#sportsList").append(sports);
 
-});
