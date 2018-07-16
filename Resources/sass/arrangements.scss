@@ -20,11 +20,14 @@
 
 .extendDiv{
    margin-bottom: 30px;
-   //background: darkblue;
    height: 300px;
 }
 
 .excursionTitle{
     font-family: excursionTitle;
     color: $orange;
+}
+
+.toShow{
+    display: none;
 }

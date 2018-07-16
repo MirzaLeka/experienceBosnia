@@ -178,6 +178,17 @@ a {
   top: 50%;
   right: -20%; }
 
+.closeModal {
+  color: #333;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  font-size: 32px;
+  cursor: pointer;
+  padding: none; }
+  .closeModal:hover {
+    color: gray; }
+
 .arrangementsImg {
   height: 150px;
   width: 100%;

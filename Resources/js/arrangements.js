@@ -108,6 +108,8 @@ if (j %4 == 0) {
 }
 ++j;
 
+arrangements+= `<br><div class="toShow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div><br>`;
+
 arrangements+= `<button style="width: 100%;" class="btn btn-success extendBtn" onclick="expandMe(${i})">SHOW MORE</button>  </div>`;
 }
 
@@ -116,49 +118,35 @@ $("#arrangementsList").append(arrangements);
 
 // Expand Div
 
-/*
-var active = false;
-
-$(".extendBtn").click(function() {
-
- 
-  
-    if (!active) {
-        $(this).closest('.extendDiv').css({
-      height: "450px"
-    }); 
-    active = true;
-    }
-      else {
-          $(this).closest('.extendDiv').css({
-      height: "300px"
-    });
-    active = false;
-    }
-    
-    console.log(active);
-
-});
-*/
-
-var active = false;
-
+var activeArr = [false, false, false, false, false, false, false, false];
 
 function expandMe(counter) {
 
- if (!active) {
+ if (!activeArr[counter]) {
     $(`.extendDiv:eq(${counter})`).css({
-  height: "450px"
+  height: "100%"
 }); 
-active = true;
+
+$(`.toShow:eq(${counter})`).fadeIn();
+
+  $(`.extendBtn:eq(${counter})`).text("SHOW LESS");
+
+activeArr[counter] = true;
 }
   else {
+
     $(`.extendDiv:eq(${counter})`).css({
   height: "300px"
 });
-active = false;
-}
 
+$(`.toShow:eq(${counter})`).css({
+    display: "none"
+  }); 
+
+  $(`.extendBtn:eq(${counter})`).text("SHOW MORE");
+
+activeArr[counter] = false;
+}
 
 
 }
