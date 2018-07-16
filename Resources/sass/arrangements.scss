@@ -5,6 +5,11 @@
     width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
+
+&:hover{
+    filter: brightness(0.5);
+}
+
 }
 
 /* Excursions */
@@ -14,7 +19,9 @@
 }
 
 .extendDiv{
-   margin-bottom: 50px;
+   margin-bottom: 30px;
+   //background: darkblue;
+   height: 300px;
 }
 
 .excursionTitle{

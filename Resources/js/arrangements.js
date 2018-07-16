@@ -6,16 +6,6 @@ var globalSrc = 0;
 function openModal(src) {
     modal.style.display = "block";
 
- /*   $("body").css({
-        'filter'         : 'brightness(0.3)',
-        '-webkit-filter' : 'brightness(0.3)'
-    });
-
-    $("#myModal").css({
-        'filter'         : 'brightness(1)',
-        '-webkit-filter' : 'brightness(1)'
-    }); */
-
    $(".modalImg").attr("src", pageImages[src]);
 
    globalSrc = src;
@@ -82,14 +72,14 @@ const pageImages = [
 // Arrangements routes
 
 const arrangementsTitles = [
-    'Mostar-Počitelj-Konjic',
-    'Jajce-Travnik',
-    'Bihać-Ostrožac-Una',
-    'Višegrad-Srebrenica',
-    'Tuzla-Srebrenik-Bijambare',
-    'Neum-Stolac-Kravice',
-    'Goražde-Foča-Tjentište',
-    'Banja Luka-Doboj-Tešanj'
+    'Mostar - Počitelj - Konjic',
+    'Jajce - Travnik',
+    'Bihać - Ostrožac - Una',
+    'Višegrad - Srebrenica',
+    'Tuzla - Srebrenik - Bijambare',
+    'Neum - Stolac - Kravice',
+    'Goražde - Foča - Tjentište',
+    'Banja Luka - Doboj - Tešanj'
 ];
 
 // Adding Arrangements
@@ -118,15 +108,57 @@ if (j %4 == 0) {
 }
 ++j;
 
-arrangements+= `<button style="width: 100%;" class="btn btn-success extendBtn">SHOW MORE</button>  </div>`;
+arrangements+= `<button style="width: 100%;" class="btn btn-success extendBtn" onclick="expandMe(${i})">SHOW MORE</button>  </div>`;
 }
 
 $("#arrangementsList").append(arrangements);
 
 
-// $(".extendBtn").click(() => {
-//     $(this).(".extendDiv").css({
-//         background: "green"
-//     });
-// });
+// Expand Div
 
+/*
+var active = false;
+
+$(".extendBtn").click(function() {
+
+ 
+  
+    if (!active) {
+        $(this).closest('.extendDiv').css({
+      height: "450px"
+    }); 
+    active = true;
+    }
+      else {
+          $(this).closest('.extendDiv').css({
+      height: "300px"
+    });
+    active = false;
+    }
+    
+    console.log(active);
+
+});
+*/
+
+var active = false;
+
+
+function expandMe(counter) {
+
+ if (!active) {
+    $(`.extendDiv:eq(${counter})`).css({
+  height: "450px"
+}); 
+active = true;
+}
+  else {
+    $(`.extendDiv:eq(${counter})`).css({
+  height: "300px"
+});
+active = false;
+}
+
+
+
+}

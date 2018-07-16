@@ -183,13 +183,16 @@ a {
   width: 100%;
   margin-bottom: 20px;
   cursor: pointer; }
+  .arrangementsImg:hover {
+    filter: brightness(0.5); }
 
 /* Excursions */
 .extendBtn {
   width: 150px !important; }
 
 .extendDiv {
-  margin-bottom: 50px; }
+  margin-bottom: 30px;
+  height: 300px; }
 
 .excursionTitle {
   font-family: excursionTitle;
