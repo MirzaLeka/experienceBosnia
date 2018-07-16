@@ -137,8 +137,9 @@ font-family: titleFont;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: transparent; /* Fallback color */
+  // overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(51, 51, 51, 0.3); /* Fallback color */
+  overflow: hidden;
 }
 
 /* Modal Content */
@@ -149,7 +150,10 @@ font-family: titleFont;
   margin: 0 auto;
   border: 1px solid #888;
   width: 50%;
+  height: 500px;
 }
+
+/*
 
 @media only screen and (max-width: 768px) {
 
@@ -163,9 +167,7 @@ font-family: titleFont;
   }
 }
 
-.modal-body{
-  padding: 5%;
-}
+*/
 
 .form-group{
   margin: 0 auto !important;
@@ -192,7 +194,40 @@ font-family: titleFont;
 }
 
 .modalImg{
-  height: 100%;
+  height: 470px;
   width: 100%;
 }
+
+.arrowBtn{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  &:hover{
+    background: darken(#DDD, 15%);
+    color: #fff;
+  }
+
+  &:active{
+    border: none !important;
+    outline-width: 0 !important;
+  }
+  
+  &:focus{
+    border: none !important;
+    outline-width: 0 !important;
+  }
+
+}
+
+#leftArrowBtn{
+  top: 50%;
+  left: -20%;
+}
+
+#rightArrowBtn{
+  top: 50%;
+  right: -20%;
+}
+
 

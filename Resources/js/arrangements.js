@@ -6,6 +6,16 @@ var globalSrc = 0;
 function openModal(src) {
     modal.style.display = "block";
 
+ /*   $("body").css({
+        'filter'         : 'brightness(0.3)',
+        '-webkit-filter' : 'brightness(0.3)'
+    });
+
+    $("#myModal").css({
+        'filter'         : 'brightness(1)',
+        '-webkit-filter' : 'brightness(1)'
+    }); */
+
    $(".modalImg").attr("src", pageImages[src]);
 
    globalSrc = src;
