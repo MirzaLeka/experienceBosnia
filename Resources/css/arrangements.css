@@ -91,21 +91,18 @@ a {
 .modal {
   display: none;
   /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 2;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
   width: 100%;
   /* Full width */
   height: 100%;
   /* Full height */
   background-color: rgba(51, 51, 51, 0.3);
   /* Fallback color */
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh; }
 
 /* Modal Content */
 .modal-content {
@@ -115,7 +112,7 @@ a {
   margin: 0 auto;
   border: 1px solid #888;
   width: 50%;
-  height: 500px; }
+  height: 65%; }
 
 /*
 
@@ -153,7 +150,7 @@ a {
   color: #FFF; }
 
 .modalImg {
-  height: 470px;
+  height: 200px;
   width: 100%; }
 
 .arrowBtn {

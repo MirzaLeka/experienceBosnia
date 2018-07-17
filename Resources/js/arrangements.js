@@ -4,7 +4,7 @@ var globalSrc = 0;
 // open modal
 
 function openModal(src) {
-    modal.style.display = "block";
+    modal.style.display = "flex";
 
    $(".modalImg").attr("src", pageImages[src]);
 
