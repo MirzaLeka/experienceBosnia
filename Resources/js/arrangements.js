@@ -9,7 +9,48 @@ function openModal(src) {
    $(".modalImg").attr("src", pageImages[src]);
 
    globalSrc = src;
-}
+
+   console.log(src);
+
+   let changeCaption =  Math.floor(src / 4);
+
+   console.log("cc " + changeCaption);
+
+   $(".modalCaption").text(arrangementsTitles[changeCaption]);
+
+
+//    switch (src) {
+    
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//     $(".modalCaption").text(arrangementsTitles[0]);
+//     break;
+
+//     case 5:
+//     case 6:
+//     case 7:
+//     case 8:
+//     $(".modalCaption").text(arrangementsTitles[1]);
+//     break;
+
+//     case 9:
+//     case 10:
+//     case 11:
+//     case 12:
+//     $(".modalCaption").text(arrangementsTitles[2]);
+//     break;
+
+//     default:
+//     $(".modalCaption").text("sss");
+//     break;
+
+
+
+//        }
+   }
+
 
 function nextImg() {
     globalSrc++;
@@ -19,6 +60,8 @@ function nextImg() {
     }
     
     $(".modalImg").attr("src", pageImages[globalSrc]);
+
+
 
 }
 
@@ -30,6 +73,7 @@ function prevImg() {
     }
 
     $(".modalImg").attr("src", pageImages[globalSrc]);
+
 
 }
 

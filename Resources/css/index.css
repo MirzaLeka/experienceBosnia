@@ -95,7 +95,7 @@ a {
   /* Full width */
   height: 100%;
   /* Full height */
-  background-color: rgba(51, 51, 51, 0.3);
+  background-color: rgba(51, 51, 51, 0.9);
   /* Fallback color */
   overflow: hidden;
   width: 100%;
@@ -106,13 +106,39 @@ a {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  border: 1px solid #888;
+  /*  background-color: #fefefe;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #888; */
   width: 50%;
-  height: 65%; }
+  height: 65%;
+  padding: none;
+  margin: none;
+  background: transparent;
+  border: transparent;
+  /*box-shadow: none;
+  border: none;*/ }
+
+/*
+.modal-body{
+background: transparent;  
+padding: none;
+margin: none;
+box-shadow: none;
+border: none;
+} */
+.modalCaption {
+  background: transparent;
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  color: #FFF; }
+
+.modalImg {
+  height: 100%;
+  width: 100%; }
 
 /*
 
@@ -149,10 +175,6 @@ a {
 .modal-btn:hover {
   color: #FFF; }
 
-.modalImg {
-  height: 200px;
-  width: 100%; }
-
 .arrowBtn {
   position: absolute;
   width: 60px;
@@ -185,5 +207,23 @@ a {
   padding: none; }
   .closeModal:hover {
     color: gray; }
+
+/* Modal Animation */
+.modal-content, .modalCaption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=index.css.map */
