@@ -178,13 +178,16 @@ border: none;
 .arrowBtn {
   position: absolute;
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  background: transparent;
+  color: #AAA;
+  border: none; }
   .arrowBtn:hover {
-    background: #b7b7b7;
-    color: #fff; }
+    color: #FFF; }
   .arrowBtn:active {
     border: none !important;
-    outline-width: 0 !important; }
+    outline-width: 0 !important;
+    box-shadow: none; }
   .arrowBtn:focus {
     border: none !important;
     outline-width: 0 !important; }

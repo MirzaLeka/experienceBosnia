@@ -63,6 +63,12 @@ function nextImg() {
 
 
 
+    let changeCaption =  Math.floor(globalSrc / 4);
+ 
+    console.log("cc " + changeCaption);
+ 
+    $(".modalCaption").text(arrangementsTitles[changeCaption]);
+
 }
 
 function prevImg() {
@@ -73,6 +79,14 @@ function prevImg() {
     }
 
     $(".modalImg").attr("src", pageImages[globalSrc]);
+
+
+
+    let changeCaption =  Math.floor(globalSrc / 4);
+ 
+    console.log("cc " + changeCaption);
+ 
+    $(".modalCaption").text(arrangementsTitles[changeCaption]);
 
 
 }

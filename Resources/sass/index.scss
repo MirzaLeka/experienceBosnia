@@ -227,15 +227,19 @@ border: none;
   position: absolute;
   width: 60px;
   height: 60px;
+  background: transparent;
+  color: #AAA;
+  border: none;
 
   &:hover{
-    background: darken(#DDD, 15%);
-    color: #fff;
+    //background: darken(#DDD, 15%);
+    color: #FFF;
   }
 
   &:active{
     border: none !important;
     outline-width: 0 !important;
+    box-shadow: none;
   }
   
   &:focus{
