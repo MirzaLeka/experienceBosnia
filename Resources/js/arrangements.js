@@ -1,5 +1,6 @@
 
 var globalSrc = 0;
+let changeCaption = 0;
 
 // open modal
 
@@ -10,45 +11,10 @@ function openModal(src) {
 
    globalSrc = src;
 
-   console.log(src);
-
-   let changeCaption =  Math.floor(src / 4);
-
-   console.log("cc " + changeCaption);
+   changeCaption =  Math.floor(globalSrc / 4);
 
    $(".modalCaption").text(arrangementsTitles[changeCaption]);
 
-
-//    switch (src) {
-    
-//     case 1:
-//     case 2:
-//     case 3:
-//     case 4:
-//     $(".modalCaption").text(arrangementsTitles[0]);
-//     break;
-
-//     case 5:
-//     case 6:
-//     case 7:
-//     case 8:
-//     $(".modalCaption").text(arrangementsTitles[1]);
-//     break;
-
-//     case 9:
-//     case 10:
-//     case 11:
-//     case 12:
-//     $(".modalCaption").text(arrangementsTitles[2]);
-//     break;
-
-//     default:
-//     $(".modalCaption").text("sss");
-//     break;
-
-
-
-//        }
    }
 
 
@@ -61,11 +27,7 @@ function nextImg() {
     
     $(".modalImg").attr("src", pageImages[globalSrc]);
 
-
-
-    let changeCaption =  Math.floor(globalSrc / 4);
- 
-    console.log("cc " + changeCaption);
+    changeCaption =  Math.floor(globalSrc / 4);
  
     $(".modalCaption").text(arrangementsTitles[changeCaption]);
 
@@ -80,19 +42,14 @@ function prevImg() {
 
     $(".modalImg").attr("src", pageImages[globalSrc]);
 
-
-
-    let changeCaption =  Math.floor(globalSrc / 4);
- 
-    console.log("cc " + changeCaption);
- 
+    changeCaption =  Math.floor(globalSrc / 4);
+  
     $(".modalCaption").text(arrangementsTitles[changeCaption]);
 
 
 }
 
 const pageImages = [
-    '',
     '../Resources/img/M1.jpg',
     '../Resources/img/M2.jpg',
     '../Resources/img/M3.jpg',
@@ -150,16 +107,16 @@ for (let i = 0; i < arrangementsTitles.length; i++) {
 
 for (; j < pageImages.length; j++) {
 
-if (j == 0) {
-    continue;
-}
-
 arrangements+=`
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
             </div>  `;
 
-if (j %4 == 0) {
+if (j == 0) {
+    continue;
+}
+
+ if ((j+1) % 4 == 0) {
     break;
 }
 

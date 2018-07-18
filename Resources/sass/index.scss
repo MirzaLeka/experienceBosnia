@@ -127,11 +127,10 @@ font-family: titleFont;
 
 // Modal
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  display: none; 
+  width: 100%; 
+  height: 100%;
   // overflow: auto; /* Enable scroll if needed */
   background-color: rgba(51, 51, 51, 0.9); /* Fallback color */
   overflow: hidden;
@@ -144,29 +143,13 @@ height: 100vh;
 
 /* Modal Content */
 .modal-content {
-/*  background-color: #fefefe;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  border: 1px solid #888; */
   width: 50%;
   height: 65%;
   padding: none;
   margin: none;
   background: transparent;
   border: transparent;
-  /*box-shadow: none;
-  border: none;*/
 }
-
-/*
-.modal-body{
-background: transparent;  
-padding: none;
-margin: none;
-box-shadow: none;
-border: none;
-} */
 
 .modalCaption{
   background: transparent;
@@ -181,6 +164,31 @@ border: none;
   height: 100%;
   width: 100%;
 }
+
+#leftArrowBtn{
+  top: 50%;
+  left: -20%;
+}
+
+#rightArrowBtn{
+  top: 50%;
+  right: -20%;
+}
+
+.closeModal{
+  color: #333;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  font-size: 32px;
+  cursor: pointer;
+  padding: none;
+
+  &:hover{
+    color: lighten(#333, 30%);
+  }
+}
+
 
 
 /*
@@ -247,30 +255,6 @@ border: none;
     outline-width: 0 !important;
   }
 
-}
-
-#leftArrowBtn{
-  top: 50%;
-  left: -20%;
-}
-
-#rightArrowBtn{
-  top: 50%;
-  right: -20%;
-}
-
-.closeModal{
-  color: #333;
-  position: absolute;
-  top: 4%;
-  right: 4%;
-  font-size: 32px;
-  cursor: pointer;
-  padding: none;
-
-  &:hover{
-    color: lighten(#333, 30%);
-  }
 }
 
 
