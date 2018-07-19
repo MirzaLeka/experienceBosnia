@@ -158,6 +158,7 @@ height: 100vh;
   text-align: center;
   margin-top: 2%;
   color: #FFF;
+  font-size: 24px;
 }
 
 .modalImg{
@@ -165,73 +166,9 @@ height: 100vh;
   width: 100%;
 }
 
-#leftArrowBtn{
-  top: 50%;
-  left: -20%;
-}
-
-#rightArrowBtn{
-  top: 50%;
-  right: -20%;
-}
-
-.closeModal{
-  color: #333;
-  position: absolute;
-  top: 4%;
-  right: 4%;
-  font-size: 32px;
-  cursor: pointer;
-  padding: none;
-
-  &:hover{
-    color: lighten(#333, 30%);
-  }
-}
-
-
-
-/*
-
-@media only screen and (max-width: 768px) {
-
-  .modal{
-      padding-top: 0px;
-  }
-
-  .modal-content {
-      width: 100%;
-      border: none;
-  }
-}
-
-*/
-
-.form-group{
-  margin: 0 auto !important;
-  text-align: center !important;
-  display: block !important;
-  width: 100%;
-  padding-bottom: 10px;
-}
-
-.input-group-modal{
-  margin: 0 auto;
-  text-align: center;
-  width: 70%;
-}
-
-.modal-btn{
-  width: 100%;
-  background: #111;
-  color: #FFF;
-}
-
-.modal-btn:hover{
-  color: #FFF;
-}
 
 .arrowBtn{
+  top: 50%;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -255,6 +192,180 @@ height: 100vh;
     outline-width: 0 !important;
   }
 
+}
+
+#leftArrowBtn{
+  left: -20%;
+}
+
+#rightArrowBtn{
+  right: -20%;
+}
+
+.closeModal{
+  color: #333;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  font-size: 32px;
+  cursor: pointer;
+  padding: none;
+
+  &:hover{
+    color: lighten(#333, 30%);
+  }
+}
+
+
+@media only screen and (min-width: 2560px) {
+
+  .modalCaption {
+    font-size: 80px;
+   }
+ 
+   .arrowIcon{
+     font-size: 150px;
+   }
+
+   .closeModal{
+    font-size: 140px;
+   }
+
+} 
+
+
+@media only screen and (max-width: 768px) {
+
+  .modal{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .modal-content {
+      width: 100%;
+      height: 100%;
+      border: none;
+  }
+
+  .modalImg{
+    height: 85%;
+    width: 100%;
+  }
+
+  .arrowBtn{
+    top: 45%;
+  }
+
+  #leftArrowBtn{
+    left: 10%;
+  }
+  
+  #rightArrowBtn{
+    right: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .modalImg{
+    height: 85%;
+  }
+
+  .closeModal{
+    top: 3%;
+    right: 3%;
+    font-size: 24px;
+  }
+
+  .modalCaption {
+   margin-top: 1%;
+   font-size: 12px;
+  }
+
+  .arrowBtn{
+    top: 40%;
+  }
+
+  .arrowIcon{
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .modalImg{
+    height: 85%;
+  }
+
+  .modalCaption {
+   font-size: 8px;
+  }
+
+  .arrowIcon{
+    font-size: 30px;
+  }
+
+  .arrowBtn{
+    top: 35%;
+  }
+  
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .modalImg{
+    height: 85%;
+  }
+
+  .modalCaption {
+   font-size: 10px;
+  }
+
+   .arrowIcon{
+    font-size: 22px;
+  }
+
+  .arrowBtn{
+    top: 25%;
+  }
+
+  #leftArrowBtn{
+    left: -5%;
+  }
+  
+  #rightArrowBtn{
+    right: -5%;
+  }
+
+}
+
+
+
+.form-group{
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: block !important;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.input-group-modal{
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+.modal-btn{
+  width: 100%;
+  background: #111;
+  color: #FFF;
+}
+
+.modal-btn:hover{
+  color: #FFF;
 }
 
 

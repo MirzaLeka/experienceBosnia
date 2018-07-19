@@ -115,18 +115,35 @@ a {
   width: 100%;
   text-align: center;
   margin-top: 2%;
-  color: #FFF; }
+  color: #FFF;
+  font-size: 24px; }
 
 .modalImg {
   height: 100%;
   width: 100%; }
 
-#leftArrowBtn {
+.arrowBtn {
   top: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  color: #AAA;
+  border: none; }
+  .arrowBtn:hover {
+    color: #FFF; }
+  .arrowBtn:active {
+    border: none !important;
+    outline-width: 0 !important;
+    box-shadow: none; }
+  .arrowBtn:focus {
+    border: none !important;
+    outline-width: 0 !important; }
+
+#leftArrowBtn {
   left: -20%; }
 
 #rightArrowBtn {
-  top: 50%;
   right: -20%; }
 
 .closeModal {
@@ -140,21 +157,85 @@ a {
   .closeModal:hover {
     color: gray; }
 
-/*
+@media only screen and (min-width: 2560px) {
+  .modalCaption {
+    font-size: 80px; }
 
+  .arrowIcon {
+    font-size: 150px; }
+
+  .closeModal {
+    font-size: 140px; } }
 @media only screen and (max-width: 768px) {
-
-  .modal{
-      padding-top: 0px;
-  }
+  .modal {
+    overflow-y: hidden;
+    overflow-x: hidden; }
 
   .modal-content {
-      width: 100%;
-      border: none;
-  }
-}
+    width: 100%;
+    height: 100%;
+    border: none; }
 
-*/
+  .modalImg {
+    height: 85%;
+    width: 100%; }
+
+  .arrowBtn {
+    top: 45%; }
+
+  #leftArrowBtn {
+    left: 10%; }
+
+  #rightArrowBtn {
+    right: 10%; } }
+@media only screen and (max-width: 540px) {
+  .modalImg {
+    height: 85%; }
+
+  .closeModal {
+    top: 3%;
+    right: 3%;
+    font-size: 24px; }
+
+  .modalCaption {
+    margin-top: 1%;
+    font-size: 12px; }
+
+  .arrowBtn {
+    top: 40%; }
+
+  .arrowIcon {
+    font-size: 30px; } }
+@media only screen and (max-width: 450px) {
+  .modalImg {
+    height: 85%; }
+
+  .modalCaption {
+    font-size: 8px; }
+
+  .arrowIcon {
+    font-size: 30px; }
+
+  .arrowBtn {
+    top: 35%; } }
+@media only screen and (max-width: 360px) {
+  .modalImg {
+    height: 85%; }
+
+  .modalCaption {
+    font-size: 10px; }
+
+  .arrowIcon {
+    font-size: 22px; }
+
+  .arrowBtn {
+    top: 25%; }
+
+  #leftArrowBtn {
+    left: -5%; }
+
+  #rightArrowBtn {
+    right: -5%; } }
 .form-group {
   margin: 0 auto !important;
   text-align: center !important;
@@ -174,23 +255,6 @@ a {
 
 .modal-btn:hover {
   color: #FFF; }
-
-.arrowBtn {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  color: #AAA;
-  border: none; }
-  .arrowBtn:hover {
-    color: #FFF; }
-  .arrowBtn:active {
-    border: none !important;
-    outline-width: 0 !important;
-    box-shadow: none; }
-  .arrowBtn:focus {
-    border: none !important;
-    outline-width: 0 !important; }
 
 /* Modal Animation */
 .modal-content, .modalCaption {
