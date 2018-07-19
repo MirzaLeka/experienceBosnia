@@ -181,13 +181,13 @@ a {
     width: 100%; }
 
   .arrowBtn {
-    top: 45%; }
+    top: 40%; }
 
   #leftArrowBtn {
-    left: 10%; }
+    left: 5%; }
 
   #rightArrowBtn {
-    right: 10%; } }
+    right: 5%; } }
 @media only screen and (max-width: 540px) {
   .modalImg {
     height: 85%; }
@@ -202,7 +202,7 @@ a {
     font-size: 12px; }
 
   .arrowBtn {
-    top: 40%; }
+    top: 35%; }
 
   .arrowIcon {
     font-size: 30px; } }
@@ -217,7 +217,7 @@ a {
     font-size: 30px; }
 
   .arrowBtn {
-    top: 35%; } }
+    top: 30%; } }
 @media only screen and (max-width: 360px) {
   .modalImg {
     height: 85%; }
