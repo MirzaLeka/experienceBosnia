@@ -49,15 +49,23 @@ if (counter == headerCover.length) {
     counter = 0;
 }
 
-        $('#header').fadeTo('slow', 0.3, function()
-        {
-            $(this).css({
-                'background-image': 'url(' + headerCover[counter] + ')'
-            });
-        }).fadeTo('slow', 1);
+$('#header').slideDown('slow', function()
+{
+    $(this).css({
+        'background-image': 'url(' + headerCover[counter] + ')'
+    });
+});
 
-        }, 4000);
+}, 4000);
 
+        // $('#header').fadeTo('slow', 0.3, function()
+        // {
+        //     $(this).css({
+        //         'background-image': 'url(' + headerCover[counter] + ')'
+        //     });
+        // }).fadeTo('slow', 1);
+
+        // }, 4000);
 
     });
 

@@ -1,6 +1,5 @@
 
 const pageImages = [
-    '',
     '../Resources/img/Raft1.jpg',
     '../Resources/img/Raft2.jpg',
     '../Resources/img/Boracko1.jpg',
@@ -27,21 +26,21 @@ const sportsTitles = [
 // Adding sports
 
 let sports = '';
-let k = 6;
-let j = 1;
+let k = 5;
+let j = 0;
 for (let i = 0; i < sportsTitles.length; i++) {
     sports += `<div class="extendDiv">  <h2 class="excursionTitle">${sportsTitles[i]}</h2> <br> `;
 
 if (i < 3) {
 
-    for (; j < 9; j++) {
+    for (; j < 8; j++) {
 
         sports+=`
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
                     </div> `;
                                
-        if (j % 2 == 0) {
+        if (j % 2 != 0) {
             break;
         }
         

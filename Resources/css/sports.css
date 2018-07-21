@@ -283,10 +283,14 @@ a {
   width: 150px !important; }
 
 .extendDiv {
-  margin-bottom: 50px; }
+  margin-bottom: 30px;
+  height: 300px; }
 
 .excursionTitle {
   font-family: excursionTitle;
   color: #f48634; }
+
+.toShow {
+  display: none; }
 
 /*# sourceMappingURL=sports.css.map */
