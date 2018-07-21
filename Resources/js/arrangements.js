@@ -151,7 +151,7 @@ activeArr[counter] = true;
   else {
 
     $(`.extendDiv:eq(${counter})`).css({
-  height: "300px"
+  height: "100%"
 });
 
 $(`.toShow:eq(${counter})`).css({
