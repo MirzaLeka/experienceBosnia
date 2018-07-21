@@ -1,4 +1,54 @@
 
+var globalSrc = 0;
+let changeCaption = 0;
+
+// open modal
+
+function openModal(src) {
+    modal.style.display = "flex";
+
+   $(".modalImg").attr("src", pageImages[src]);
+
+   globalSrc = src;
+
+   changeCaption =  Math.floor(globalSrc / 2);
+
+   $(".modalCaption").text(sportsTitles[changeCaption]);
+
+   }
+
+
+function nextImg() {
+    globalSrc++;
+
+    if (globalSrc == pageImages.length) {
+        globalSrc = 1;
+    }
+    
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+    changeCaption =  Math.floor(globalSrc / 2);
+ 
+    $(".modalCaption").text(sportsTitles[changeCaption]);
+
+}
+
+function prevImg() {
+    globalSrc--;
+
+    if (globalSrc < 1) {
+        globalSrc = pageImages.length-1;
+    }
+
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+    changeCaption =  Math.floor(globalSrc / 2);
+  
+    $(".modalCaption").text(sportsTitles[changeCaption]);
+
+
+}
+
 const pageImages = [
     '../Resources/img/Raft1.jpg',
     '../Resources/img/Raft2.jpg',
@@ -6,8 +56,6 @@ const pageImages = [
     '../Resources/img/Boracko2.jpg',
     '../Resources/img/Splav1.jpg',
     '../Resources/img/Splav2.jpg',
-    '../Resources/img/Bjelasnica1.jpg',
-    '../Resources/img/Bjelasnica2.jpg',
     '../Resources/img/ESAjdinovici.jpg',
     '../Resources/img/ESBegovo.jpg',
     '../Resources/img/ESCardaci.jpg',
@@ -26,7 +74,7 @@ const sportsTitles = [
 // Adding sports
 
 let sports = '';
-let k = 5;
+let k = 3;
 let j = 0;
 for (let i = 0; i < sportsTitles.length; i++) {
     sports += `<div class="extendDiv">  <h2 class="excursionTitle">${sportsTitles[i]}</h2> <br> `;
@@ -37,7 +85,7 @@ if (i < 3) {
 
         sports+=`
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
+                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
                     </div> `;
                                
         if (j % 2 != 0) {
@@ -54,7 +102,7 @@ else {
 
         sports+=`
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" alt="Image"/>
+                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" onclick='openModal(${k})' alt="Image"/>
                     </div> `;     
         }
    

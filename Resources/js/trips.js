@@ -1,4 +1,69 @@
 
+var globalSrc = 0;
+let changeCaption = 0;
+
+// open modal
+
+function openModal(src) {
+    modal.style.display = "flex";
+
+   $(".modalImg").attr("src", pageImages[src]);
+
+   globalSrc = src;
+
+   if (globalSrc < 9) {
+    changeCaption =  Math.floor(globalSrc / 9);
+   }
+   else {
+    changeCaption =  Math.floor((globalSrc-7) / 2);
+   }
+
+   $(".modalCaption").text(tripsTitles[changeCaption]);
+
+   }
+
+
+function nextImg() {
+    globalSrc++;
+
+    if (globalSrc == pageImages.length) {
+        globalSrc = 1;
+    }
+    
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+   if (globalSrc < 9) {
+    changeCaption =  Math.floor(globalSrc / 9);
+   }
+   else {
+    changeCaption =  Math.floor((globalSrc-7) / 2);
+   }
+
+ 
+    $(".modalCaption").text(tripsTitles[changeCaption]);
+
+}
+
+function prevImg() {
+    globalSrc--;
+
+    if (globalSrc < 1) {
+        globalSrc = pageImages.length-1;
+    }
+
+    $(".modalImg").attr("src", pageImages[globalSrc]);
+
+    if (globalSrc < 9) {
+        changeCaption =  Math.floor(globalSrc / 9);
+       }
+       else {
+        changeCaption =  Math.floor((globalSrc-7) / 2);
+       }
+  
+    $(".modalCaption").text(tripsTitles[changeCaption]);
+
+
+}
 
 const pageImages = [
     '../Resources/img/SS1.jpg',
@@ -33,7 +98,7 @@ const pageImages = [
 // Trips routes
 
 const tripsTitles = [
-    'Sarajevo Sightseeng',
+    'Sarajevo Sightseeing',
     'Trebević',
     'Tunel Spasa',
     'Bjelašnica',
@@ -59,7 +124,7 @@ if (i == 0) {
 
         trips+=` 
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" alt="Image"/>
+                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
                     </div> `;
         
         }
@@ -72,7 +137,7 @@ else {
 
         trips+=` 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" alt="Image"/>
+                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" onclick='openModal(${k})' alt="Image"/>
                     </div> `;
 
                     
