@@ -61,14 +61,17 @@ a{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    position: relative;
 }
 
 #headerTitle{
 color: #FFF;
 text-align: center;
-line-height: 105vh;
-font-size: 95px;
+font-size: 125px;
 font-family: titleFont;
+position: absolute;
+bottom: 0;
+width: 100%;
 }
 
 .languageBtn{
