@@ -124,7 +124,7 @@ if (i == 0) {
 
         trips+=` 
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
+                        <img src="${pageImages[j]}" class="img-responsive tripsImg ssTrips" onclick='openModal(${j})' alt="Image"/>
                     </div> `;
         
         }
@@ -137,7 +137,7 @@ else {
 
         trips+=` 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" onclick='openModal(${k})' alt="Image"/>
+                        <img src="${pageImages[k]}" class="img-responsive tripsImg otherTrips" onclick='openModal(${k})' alt="Image"/>
                     </div> `;
 
                     

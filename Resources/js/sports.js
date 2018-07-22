@@ -85,7 +85,7 @@ if (i < 3) {
 
         sports+=`
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img src="${pageImages[j]}" class="img-responsive arrangementsImg" onclick='openModal(${j})' alt="Image"/>
+                        <img src="${pageImages[j]}" class="img-responsive sportsImg allSportsImg" onclick='openModal(${j})' alt="Image"/>
                     </div> `;
                                
         if (j % 2 != 0) {
@@ -102,7 +102,7 @@ else {
 
         sports+=`
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img src="${pageImages[k]}" class="img-responsive arrangementsImg" onclick='openModal(${k})' alt="Image"/>
+                        <img src="${pageImages[k]}" class="img-responsive sportsImg villagesImg" onclick='openModal(${k})' alt="Image"/>
                     </div> `;     
         }
    

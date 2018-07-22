@@ -1,7 +1,7 @@
 @import "index.scss";
 
-.arrangementsImg{
-    height: 150px;
+
+.sportsImg{
     width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
@@ -12,6 +12,37 @@
 
 }
 
+.allSportsImg{
+    height: 250px;
+}
+
+
+.villagesImg{
+    height: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+    .sportsImg {
+        height: 150px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sportsImg {
+        height: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .sportsImg {
+      height: 200px;
+  }
+}
+
+
 
 /* Excursions */
 
@@ -21,7 +52,7 @@
 
 .extendDiv{
    margin-bottom: 30px;
-   height: 300px;
+   height: 100%;
 }
 
 .excursionTitle{

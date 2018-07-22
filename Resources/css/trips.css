@@ -273,14 +273,34 @@ a {
     transform: scale(0); }
   to {
     transform: scale(1); } }
-.arrangementsImg {
-  height: 150px;
+.tripsImg {
   width: 100%;
   margin-bottom: 20px;
   cursor: pointer; }
-  .arrangementsImg:hover {
+  .tripsImg:hover {
     filter: brightness(0.5); }
 
+.ssTrips {
+  height: 150px; }
+
+.otherTrips {
+  height: 250px; }
+
+@media only screen and (max-width: 992px) {
+  .otherTrips {
+    height: 200px; }
+
+  .ssTrips {
+    height: 120px; } }
+@media only screen and (max-width: 768px) {
+  .otherTrips {
+    height: 200px; }
+
+  .ssTrips {
+    height: 120px; } }
+@media only screen and (max-width: 650px) {
+  .tripsImg {
+    height: 200px; } }
 /* Excursions */
 .extendBtn {
   width: 150px !important; }

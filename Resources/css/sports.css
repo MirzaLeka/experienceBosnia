@@ -273,21 +273,35 @@ a {
     transform: scale(0); }
   to {
     transform: scale(1); } }
-.arrangementsImg {
-  height: 150px;
+.sportsImg {
   width: 100%;
   margin-bottom: 20px;
   cursor: pointer; }
-  .arrangementsImg:hover {
+  .sportsImg:hover {
     filter: brightness(0.5); }
 
+.allSportsImg {
+  height: 250px; }
+
+.villagesImg {
+  height: 150px; }
+
+@media only screen and (max-width: 992px) {
+  .sportsImg {
+    height: 150px; } }
+@media only screen and (max-width: 768px) {
+  .sportsImg {
+    height: 150px; } }
+@media only screen and (max-width: 650px) {
+  .sportsImg {
+    height: 200px; } }
 /* Excursions */
 .extendBtn {
   width: 150px !important; }
 
 .extendDiv {
   margin-bottom: 30px;
-  height: 300px; }
+  height: 100%; }
 
 .excursionTitle {
   font-family: excursionTitle;
