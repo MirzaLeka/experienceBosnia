@@ -51,7 +51,6 @@
 
     #header{
     width: 100%;
-    background-attachment: fixed;
     height: 75vh; 
     overflow: hidden;
     background-size: cover;
@@ -67,9 +66,17 @@ text-align: center;
 font-size: 125px;
 font-family: titleFont;
 position: absolute;
-bottom: 0;
+bottom: 5%;
 width: 100%;
 }
+
+/* Display <ol> list when height is less than 100vh */ 
+/* Not working properly yet -- because you have to move <ol> out of mycarousel div and setup jquery again 
+.carousel-indicators{
+    position: absolute;
+    bottom: 5%;
+}
+*/
 
 .full-screen {
   background-size: cover;
@@ -85,9 +92,9 @@ width: 100%;
     /* Animate images */
 
     const dataColors = [
-        'lightblue',
-         'firebrick',
-         'violet',
+       'lightblue',
+        'firebrick',
+        'violet',
         'lightgreen',
         'tomato',
         'forestgreen',
@@ -111,17 +118,17 @@ width: 100%;
         '../Resources/img/Cover/10.jpg'
     ];
 
-    let getItem = '';
+    let getCover = '';
 
     for (let i = 0; i < headerCover.length; i++) {
 
-    getItem += ` <div class="item">
+    getCover += ` <div class="item">
                     <img src="${headerCover[i]}" class="sliderImg" data-color="${dataColors[i]}" alt="Image">
             </div>`;
 
 }
 
-    $(".carousel-inner").append(getItem);
+    $(".carousel-inner").append(getCover);
 
 
 
@@ -157,13 +164,17 @@ width: 100%;
     var $color = $(this).attr('data-color');
     $(this).parent().css({
     'background-image' : 'url(' + $src + ')',
-    'background-color' : $color
+    'background-color' : $color,
+    "background-attachment": "fixed",
+    "background-position": "center",
+    "background-repeat": "no-repeat",
+    "background-size": "cover"
   });
     $(this).remove();
 });
 
     $('.carousel').carousel({
-    interval: 3000,
+    interval: 5000,
     pause: "false"
 });
 

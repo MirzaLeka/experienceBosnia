@@ -67,11 +67,12 @@ a{
 #headerTitle{
 color: #FFF;
 text-align: center;
-font-size: 125px;
+//font-size: 30px !important;
 font-family: titleFont;
 position: absolute;
 bottom: 0;
 width: 100%;
+text-transform: uppercase;
 }
 
 .languageBtn{
