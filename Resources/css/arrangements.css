@@ -41,10 +41,13 @@ a {
 #headerTitle {
   color: #FFF;
   text-align: center;
+  font-size: 119px;
+  margin-left: -15px;
   font-family: titleFont;
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  text-transform: uppercase; }
 
 .languageBtn {
   width: 55px;

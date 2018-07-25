@@ -9,9 +9,15 @@ app.use(express.static(__dirname + '/Web-Info', {
 extensions: ['html', 'htm']
 }));
 
+/* Render homepage on default route, /index & /home */
+
 app.get("/", (req, res) => {
 res.sendFile("index.html", {"root": __dirname + '/Web-Info'});
 });
+
+app.get("/home", (req, res) => {
+    res.sendFile("index.html", {"root": __dirname + '/Web-Info'});
+    });
 
 app.use('/Resources', express.static(__dirname + "/Resources"));
 
