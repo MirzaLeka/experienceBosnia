@@ -1,2 +1,2 @@
 ## **Experience Bosnia Project**
-[Demo site](https://experiencebosnia.herokuapp.com)
+[Demo site](https://girodibosnia.herokuapp.com)

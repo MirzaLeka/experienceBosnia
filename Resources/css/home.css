@@ -355,12 +355,21 @@ a {
   padding-bottom: 30px; }
 
 .sidebarLi {
-  margin-top: 10px; }
+  width: 122%;
+  margin-left: -40px;
+  height: 45px;
+  padding: none;
+  margin: none;
+  text-align: center; }
 
-.sidebarAnchor {
+/*
+.sidebarAnchor{
   font-size: 18px;
-  color: #42b364; }
-  .sidebarAnchor:hover {
-    color: #348e4f !important; }
+  color: $green;
+  &:hover{
+    color: darken($green, 10%) !important;
+  }
+}
+*/
 
 /*# sourceMappingURL=home.css.map */

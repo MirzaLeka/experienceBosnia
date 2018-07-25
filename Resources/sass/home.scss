@@ -53,15 +53,26 @@
   }
 
   .sidebarUl{
-    border-left: 2px solid $greyBorder;
+   border-left: 2px solid $greyBorder;
+   // border-right: 2px solid $greyBorder;
     padding-top: 20px;
     padding-bottom: 30px;
   }
 
   .sidebarLi{
-    margin-top: 10px;
+    width: 122%;
+    // margin-top: 10px;
+    margin-left: -40px;
+  //  cursor: pointer;
+  //  border-bottom: 2px solid black;
+    height: 45px;
+    padding: none;
+    margin: none;
+    text-align: center;
+
   }
 
+  /*
   .sidebarAnchor{
     font-size: 18px;
     color: $green;
@@ -69,6 +80,6 @@
       color: darken($green, 10%) !important;
     }
   }
-  
+  */
 
   
