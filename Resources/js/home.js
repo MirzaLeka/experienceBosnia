@@ -32,6 +32,8 @@ $("#excursionsList").append(excursionsCards);
 
 /* Transportation Cards */
 
+
+
 const transportCardImages = [
     'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
     'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
@@ -40,6 +42,7 @@ const transportCardImages = [
     'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png',
     'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png'
 ]; 
+
 
 const transportCardDescription = [
     'Vozila u ponudi',
@@ -53,16 +56,20 @@ const transportCardDescription = [
 let transportCards = '';
 
 for (let i = 0; i < transportCardImages.length; i++) {
-    transportCards += `<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 transportCard">
-    <div class="col-lg-5">
-     <img src="${transportCardImages[i]}" class="img-responsive transportCardImage" alt="Image">
-    </div>
-    <div class="col-lg-7">
-      <p style="font-size: 16px" class='transportCardDescription'>${transportCardDescription[i]}</p>
-    </div>
-     </div>`;
+    transportCards += `   <li class="sidebarLi" onclick="changeTransport(${i})">${transportCardDescription[i]}</li>`;
 
 }
 
-$("#transportList").append(transportCards);
+$(".sidebarUl").append(transportCards);
 
+// 'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png'
+
+let changeTransport = (i) =>  {
+
+    const transportColors = [
+        "red", "blue", "green", "yellow", "purple", "orange"
+        ];        
+
+    $("#transportList").css({ "background": transportColors[i] });
+
+}
