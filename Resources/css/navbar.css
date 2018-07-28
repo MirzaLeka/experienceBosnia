@@ -1,0 +1,47 @@
+.nav {
+  background: #111;
+  height: 7vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.nav .navbarUl {
+  list-style: none;
+  text-align: center; }
+
+.nav .navbarUl .navbarLi {
+  display: inline-block;
+  padding-right: 5%; }
+
+.navbarLi {
+  color: white;
+  cursor: pointer; }
+  .navbarLi:hover {
+    color: #DDD; }
+
+.innerUl {
+  display: none;
+  border: 1px solid black;
+  position: absolute;
+  top: 30%;
+  background: green; }
+
+.innerLi {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  color: red; }
+
+.innerLi:last-child {
+  border-bottom: none; }
+
+excursionsLi {
+  position: relative; }
+
+#excursionsLi:hover .innerUl {
+  display: block; }
+
+/*# sourceMappingURL=navbar.css.map */
