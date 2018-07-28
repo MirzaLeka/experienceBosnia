@@ -31,6 +31,17 @@
 
   /* Transport */
 
+  #transportList{
+    @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+    background: url('../img/transport/transport2.jpg') no-repeat;
+    height: 320px;
+    width: 100%;
+    background-size: 100% 320px;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+  }
+
   .transportCard{
     cursor: pointer;
     height: 100px;

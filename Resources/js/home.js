@@ -67,9 +67,19 @@ $(".sidebarUl").append(transportCards);
 let changeTransport = (i) =>  {
 
     const transportColors = [
-        "red", "blue", "green", "yellow", "purple", "orange"
+        "../Resources/img/transport/transport2.jpg",
+         "../Resources/img/transport/transport5.jpg",
+         "../Resources/img/transport/transport3.jpg",
+         "../Resources/img/transport/transport4.jpg",
+          "../Resources/img/transport/transport1.jpg",
+           "../Resources/img/transport/transport6.png"
         ];        
 
-    $("#transportList").css({ "background": transportColors[i] });
+    $("#transportList").css({ 
+        "background": `url("${transportColors[i]}")`,
+        "height": "320px",
+        "width": "100%",
+        "background-size": "100% 320px"
+    });
 
 }

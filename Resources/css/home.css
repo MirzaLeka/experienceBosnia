@@ -328,6 +328,18 @@ a {
   color: #4044ab; }
 
 /* Transport */
+#transportList {
+  -webkit-box-shadow: 1px 1px 1px 1px #aaa;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 1px 1px 1px 1px #aaa;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 1px 1px 1px 1px #aaa;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  background: url("../img/transport/transport2.jpg") no-repeat;
+  height: 320px;
+  width: 100%;
+  background-size: 100% 320px; }
+
 .transportCard {
   cursor: pointer;
   height: 100px; }
