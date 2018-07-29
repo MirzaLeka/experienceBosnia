@@ -1,7 +1,17 @@
 
-// $(document).scroll(function() {
-//     console.log($(document).scrollTop());
-// })
+/* Display excursion Cards */
+
+$(window).scroll(function() {
+    var hT = $(".subtitle").offset().top,
+        hH = $(".subtitle").outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    
+    if (wS >= (hT+hH-wH)){
+        $(".excursionsCard").addClass("displayCards");
+    }
+ });
+
 
 const excursionsCardImages = [
     '../Resources/img/M2.jpg',

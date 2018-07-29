@@ -14,6 +14,12 @@ $green: #42b364;
    box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
   }
 
+  @mixin shadowBottom($top, $down, $left, $right, $color) {
+    -webkit-box-shadow: $top $down $left $right $color;  
+    -moz-box-shadow:    $top $down $left $right $color;  
+    box-shadow:         $top $down $left $right $color;  
+  }
+
   /* Fonts */
 
   @font-face {
