@@ -336,7 +336,7 @@ a {
   box-shadow: 1px 1px 1px 1px #aaa;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   background: url("../img/transport/transport2.jpg") no-repeat;
-  height: 320px;
+  height: 310px;
   width: 100%;
   background-size: 100% 320px; }
 
@@ -362,18 +362,28 @@ a {
   color: #000; }
 
 .sidebarUl {
-  border-left: 2px solid #373435;
-  padding-top: 20px;
-  padding-bottom: 30px; }
+  height: 320px; }
 
 .sidebarLi {
   width: 100%;
-  border-bottom: 1px solid #373435;
-  height: 45px;
-  padding: none;
-  margin: none;
+  outline: 2px solid #222;
+  padding-top: 5%;
+  height: 53.33px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #333;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  list-style-type: none;
+  -webkit-box-shadow: 1px 1px 1px 1px #aaa;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 1px 1px 1px 1px #aaa;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 1px 1px 1px 1px #aaa;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  .sidebarLi:hover {
+    background: #444; }
 
 /*
 .sidebarAnchor{
@@ -384,5 +394,13 @@ a {
   }
 }
 */
+.add_keyframe {
+  animation: fadeEffect 2s; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=home.css.map */

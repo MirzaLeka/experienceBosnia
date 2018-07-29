@@ -56,7 +56,7 @@ const transportCardDescription = [
 let transportCards = '';
 
 for (let i = 0; i < transportCardImages.length; i++) {
-    transportCards += `   <li class="sidebarLi" onclick="changeTransport(${i})">${transportCardDescription[i]}</li>`;
+    transportCards += `   <li class="sidebarLi" style="top: ${i*16}%;" onclick="changeTransport(${i})">${transportCardDescription[i]}</li>`;
 
 }
 
@@ -65,7 +65,7 @@ $(".sidebarUl").append(transportCards);
 // 'https://www.autotrader.co.uk/images/at3/sell/landing-pages/hero-car.png'
 
 let changeTransport = (i) =>  {
-
+    
     const transportColors = [
         "../Resources/img/transport/transport2.jpg",
          "../Resources/img/transport/transport5.jpg",
@@ -77,9 +77,15 @@ let changeTransport = (i) =>  {
 
     $("#transportList").css({ 
         "background": `url("${transportColors[i]}")`,
-        "height": "320px",
+        "height": "310px",
         "width": "100%",
-        "background-size": "100% 320px"
+        "background-size": "100% 310px"
     });
+
+    $("#transportList").addClass("add_keyframe");
+
+    setTimeout(() => {
+        $("#transportList").removeClass("add_keyframe");
+    }, 1000);
 
 }

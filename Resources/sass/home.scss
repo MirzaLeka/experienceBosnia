@@ -34,7 +34,7 @@
   #transportList{
     @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
     background: url('../img/transport/transport2.jpg') no-repeat;
-    height: 320px;
+    height: 310px;
     width: 100%;
     background-size: 100% 320px;
     // -webkit-background-size: cover;
@@ -64,10 +64,11 @@
   }
 
   .sidebarUl{
-   border-left: 2px solid $greyBorder;
+  // border-left: 2px solid $greyBorder;
    // border-right: 2px solid $greyBorder;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    //padding-top: 20px;
+    //padding-bottom: 30px;
+    height: 320px;
   }
 
   .sidebarLi{
@@ -75,12 +76,22 @@
     // margin-top: 10px;
     // margin-left: -40px;
   //  cursor: pointer;
-    border-bottom: 1px solid $greyBorder;
-    height: 45px;
-    padding: none;
-    margin: none;
+     //border-bottom: 1px solid #111;
+     outline:2px solid #222;
+     padding-top: 5%;
+    height: 53.33px;
     text-align: center;
     cursor: pointer;
+    background: #333;
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+
+    &:hover{
+      background:#444;
+    }
   }
 
   /*
@@ -92,5 +103,15 @@
     }
   }
   */
+
+
+  .add_keyframe{
+    animation: fadeEffect 2s;
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
   
