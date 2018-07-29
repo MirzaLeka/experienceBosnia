@@ -7,17 +7,35 @@
     background: $grey;
   }
 
-  #excursionsTitle{
-    color: $orange;
+  .subtitle{
+    color: $orange !important;
   }
 
   .excursionsCard{
     height: 340px;
     cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.8s forwards;
+
     &:hover{
       @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
     }
   }
+ 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
 .excursionsCardImage{
   width: 100%;

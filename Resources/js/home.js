@@ -1,4 +1,8 @@
 
+// $(document).scroll(function() {
+//     console.log($(document).scrollTop());
+// })
+
 const excursionsCardImages = [
     '../Resources/img/M2.jpg',
     '../Resources/img/T3.jpg',
