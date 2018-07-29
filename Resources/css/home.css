@@ -340,6 +340,16 @@ a {
 .excursionsDescription {
   color: #4044ab; }
 
+/* Pause */
+.pauuse {
+  background: url("../img/transport/sebilj3.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  height: 40vh; }
+
 /* Transport */
 #transportRow {
   -webkit-box-shadow: 0 8px 6px -6px #000;
@@ -351,7 +361,10 @@ a {
   background: url("../img/transport/transport2.jpg") no-repeat;
   height: 310px;
   width: 100%;
-  background-size: 100% 320px; }
+  background-size: 100% 320px;
+  -webkit-background-size: 100% 320px;
+  -moz-background-size: 100% 320px;
+  -o-background-size: 100% 320px; }
 
 .sidebarUl {
   height: 320px; }
