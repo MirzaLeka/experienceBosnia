@@ -21,20 +21,47 @@
   <script src="../Resources/scripts/fontawesome.js"></script>
   <!-- Styles -->
   <link rel="stylesheet" href="../Resources/css/sports.css">
+  <link rel="stylesheet" href="../Resources/css/navbar.css">
   
 </head>
 <body>
 
-  <div id="header">
+    <div id="header">
 
-    <button class="btn languageBtn" id="languageBtn1"><b>BOS</b></button>
-    <button class="btn languageBtn" id="languageBtn2"><b>ENG</b></button>
-
-    <h1 id="headerTitle">Giro Di Bosnia</h1>
-
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                                  
+            <div class="carousel-inner" role="listbox">                    
+            </div>
+  
+        </div>      
+                 
+      <h1 id="headerTitle">Giro Di Bosnia</h1>
     
+    </div>
+  
+    <!-- Navbar-->
+  
+    <div class="nav">
+      <ul class="navbarUl">
+          <li class="navbarLi"><button class="btn btn-primary">BOS</button></li>
+          <li class="navbarLi" onclick="window.location.href='/'">Home</li>
+          <li class="navbarLi">About Us</li>
+          <li class="navbarLi" id="excursionsLi">Excursions &#9660
+  
+            <ul class="innerUl">
+              <li class="innerLi" onclick="window.location.href='/arrangements'">Arrangements</li>
+              <li class="innerLi" onclick="window.location.href='/trips'">Trips</li>
+              <li class="innerLi" onclick="window.location.href='/sports'">Sports</li>
+            </ul>
+  
+          </li>
+          <li class="navbarLi">Contact</li>
+          <li class="navbarLi">Extra Services</li>
+          <li class="navbarLi"><button class="btn btn-primary">ENG</button></li>
+      </ul>
   </div>
-
+  
+  <!-- / Navbar-->
 
  <div class="container">
       <div class="jumbotron">
