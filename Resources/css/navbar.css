@@ -7,7 +7,8 @@
   z-index: 5;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 20px 0 0 0; }
 
 .nav .navbarUl {
   list-style: none;
@@ -17,9 +18,14 @@
   display: inline-block;
   padding-right: 5%; }
 
+#excursionsLi:hover > .innerUl {
+  display: block; }
+
 .navbarLi {
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 10px 0; }
   .navbarLi:hover {
     color: #DDD; }
 
@@ -27,21 +33,27 @@
   display: none;
   border: 1px solid black;
   position: absolute;
-  top: 30%;
-  background: green; }
+  top: 30px;
+  background: #222;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  left: -15%; }
 
 .innerLi {
+  padding-top: 5px;
   cursor: pointer;
-  border-bottom: 1px solid black;
-  color: red; }
+  float: none;
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #333;
+  color: #FFF;
+  text-align: center;
+  height: 30px; }
+  .innerLi:hover {
+    background: #444; }
 
 .innerLi:last-child {
   border-bottom: none; }
-
-excursionsLi {
-  position: relative; }
-
-#excursionsLi:hover .innerUl {
-  display: block; }
 
 /*# sourceMappingURL=navbar.css.map */
