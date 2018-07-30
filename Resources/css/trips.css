@@ -291,6 +291,9 @@ a {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+#headerTitle {
+  font-size: 105px; }
+
 .tripsImg {
   width: 100%;
   margin-bottom: 20px;

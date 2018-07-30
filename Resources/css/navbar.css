@@ -16,7 +16,7 @@
 
 .nav .navbarUl .navbarLi {
   display: inline-block;
-  padding-right: 5%; }
+  padding-right: 4.5%; }
 
 #excursionsLi:hover > .innerUl {
   display: block; }

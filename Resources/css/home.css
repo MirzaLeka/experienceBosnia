@@ -371,10 +371,11 @@ a {
   list-style-type: none;
   box-shadow: 0 -1px 0 #222; }
   .sidebarLi:hover {
-    background: #444; }
+    background: #444 !important; }
 
 .sidebarLi:first-child {
-  box-shadow: none; }
+  box-shadow: none;
+  background: #222; }
 
 /*
 .sidebarAnchor{

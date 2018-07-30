@@ -1,5 +1,9 @@
 @import "index.scss";
 
+#headerTitle{
+    font-size: 105px; //overriding the font size in index.scss
+}
+
 .arrangementsImg{
     height: 150px;
     width: 100%;

@@ -130,11 +130,12 @@
     //@include shadowAround(1px, 1px, 1px, 1px, #aaa); 
 
     &:hover{
-      background:#444;
+      background:#444 !important // to override jQuery;
     }
   }
   .sidebarLi:first-child{
     box-shadow: none;
+    background: #222;
   }
 
   /*
