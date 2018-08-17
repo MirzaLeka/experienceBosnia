@@ -1,6 +1,14 @@
 $(document).ready(() => {
 
- 
+    if($(window).innerHeight() > 100) { 
+      
+        $(".innerUl").css({top: + "30px"});
+
+      } else {
+
+        $(".innerUl").css({top:  "90px"});
+
+      }
 
      // Footer
 
@@ -28,6 +36,10 @@ $(document).ready(() => {
 
 
     });
+
+
+     
+ 
 
 
         /* Slider */
