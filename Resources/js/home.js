@@ -28,7 +28,7 @@ const excursionsDescription = [
 const excursionsPaths = [
     '/arrangements',
     '/trips',
-    '/sports'
+    '/advantures'
 ];
 
 

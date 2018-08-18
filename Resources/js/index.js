@@ -8,7 +8,7 @@ $(window).scroll(function() {
         $(".innerUl").css({top: "30px"});
         // $("#excursionsLi").text('Excursions <i class="fa fa-angle-up"></i>');
         go = false;
-    } else if ($(this).scrollTop() < 500 && !go) {
+    } else if ($(this).scrollTop() < 100 && !go) {
         $(".innerUl").css({top:  "-90px"});
         // $("#excursionsLi").text('Excursions <i class="fa fa-angle-down"></i>');
              go = true;
