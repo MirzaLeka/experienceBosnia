@@ -1,14 +1,20 @@
 $(document).ready(() => {
 
-    if($(window).innerHeight() > 100) { 
-      
-        $(".innerUl").css({top: + "30px"});
+    
+/* Change inner ul menu on scroll */
+var go = true;
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 35 && go) {
+        $(".innerUl").css({top: "30px"});
+        // $("#excursionsLi").text('Excursions <i class="fa fa-angle-up"></i>');
+        go = false;
+    } else if ($(this).scrollTop() < 500 && !go) {
+        $(".innerUl").css({top:  "-90px"});
+        // $("#excursionsLi").text('Excursions <i class="fa fa-angle-down"></i>');
+             go = true;
+    }
+});
 
-      } else {
-
-        $(".innerUl").css({top:  "90px"});
-
-      }
 
      // Footer
 
