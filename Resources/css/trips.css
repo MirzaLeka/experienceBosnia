@@ -51,9 +51,10 @@ a {
 #mouseImg {
   position: absolute;
   bottom: 2%;
-  left: 48%;
+  left: 48.5%;
   height: 50px;
-  width: 50px; }
+  width: 50px;
+  opacity: 0.85; }
 
 /* Slider */
 .full-screen {
