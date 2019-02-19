@@ -1,4 +1,6 @@
-$(document).ready(() => {
+
+   /* Wjem page loads (scroll is on top) innerUl will show up on top */
+    $(".innerUl").css({top:  "-90px"});
 
     
 /* Change inner ul menu on scroll */
@@ -8,13 +10,15 @@ $(window).scroll(function() {
         $(".innerUl").css({top: "30px"});
         // $("#excursionsLi").text('Excursions <i class="fa fa-angle-up"></i>');
         go = false;
-    } else if ($(this).scrollTop() < 100 && !go) {
+    } else if ($(this).scrollTop() < 120 && !go) {
         $(".innerUl").css({top:  "-90px"});
         // $("#excursionsLi").text('Excursions <i class="fa fa-angle-down"></i>');
              go = true;
     }
 });
 
+
+$(document).ready(() => {
 
      // Footer
 
@@ -66,16 +70,16 @@ $(window).scroll(function() {
      
          
          const headerCover = [
-             '../Resources/img/Cover/01.jpg',
-             '../Resources/img/Cover/02.jpg',
-             '../Resources/img/Cover/03.jpg',
-             '../Resources/img/Cover/04.jpg',
-             '../Resources/img/Cover/05.jpg',
-             '../Resources/img/Cover/06.jpg',
-             '../Resources/img/Cover/07.jpg',
-             '../Resources/img/Cover/08.jpg',
-             '../Resources/img/Cover/09.jpg',
-             '../Resources/img/Cover/10.jpg'
+             '/assets/img/Cover/01.jpg',
+             '/assets/img/Cover/02.jpg',
+             '/assets/img/Cover/03.jpg',
+             '/assets/img/Cover/04.jpg',
+             '/assets/img/Cover/05.jpg',
+             '/assets/img/Cover/06.jpg',
+             '/assets/img/Cover/07.jpg',
+             '/assets/img/Cover/08.jpg',
+             '/assets/img/Cover/09.jpg',
+             '/assets/img/Cover/10.jpg'
          ];
      
          let getCover = '';

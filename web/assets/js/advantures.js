@@ -50,16 +50,16 @@ function prevImg() {
 }
 
 const pageImages = [
-    '../Resources/img/Raft1.jpg',
-    '../Resources/img/Raft2.jpg',
-    '../Resources/img/Boracko1.jpg',
-    '../Resources/img/Boracko2.jpg',
-    '../Resources/img/Splav1.jpg',
-    '../Resources/img/Splav2.jpg',
-    '../Resources/img/ESAjdinovici.jpg',
-    '../Resources/img/ESBegovo.jpg',
-    '../Resources/img/ESCardaci.jpg',
-    '../Resources/img/ESKonjic.jpg'
+    '/assets/img/Raft1.jpg',
+    '/assets/img/Raft2.jpg',
+    '/assets/img/Boracko1.jpg',
+    '/assets/img/Boracko2.jpg',
+    '/assets/img/Splav1.jpg',
+    '/assets/img/Splav2.jpg',
+    '/assets/img/ESAjdinovici.jpg',
+    '/assets/img/ESBegovo.jpg',
+    '/assets/img/ESCardaci.jpg',
+    '/assets/img/ESKonjic.jpg'
 ];
 
 // Sports routes

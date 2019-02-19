@@ -14,9 +14,9 @@ $(window).scroll(function() {
 
 
 const excursionsCardImages = [
-    '../Resources/img/M2.jpg',
-    '../Resources/img/T3.jpg',
-    '../Resources/img/B2.jpg'
+    '/assets/img/M2.jpg',
+    '/assets/img/T3.jpg',
+    '/assets/img/B2.jpg'
 ];
 
 const excursionsDescription = [
@@ -89,12 +89,12 @@ let changeTransport = (i) =>  {
     });
     
     const transportBackgrounds = [
-        "../Resources/img/transport/transport2.jpg",
-         "../Resources/img/transport/transport5.jpg",
-         "../Resources/img/transport/transport3.jpg",
-         "../Resources/img/transport/transport4.jpg",
-          "../Resources/img/transport/transport1.jpg",
-           "../Resources/img/transport/transport6.png"
+        "/assets/img/transport/transport2.jpg",
+         "/assets/img/transport/transport5.jpg",
+         "/assets/img/transport/transport3.jpg",
+         "/assets/img/transport/transport4.jpg",
+          "/assets/img/transport/transport1.jpg",
+           "/assets/img/transport/transport6.png"
         ];        
 
     $("#transportList").css({ 
